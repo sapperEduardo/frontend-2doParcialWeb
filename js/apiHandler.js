@@ -1,5 +1,5 @@
 // api/apiHandler.js
-const API_URL = process.env.API_URL || "http://127.0.0.1:8000"; // URL de la API
+const API_URL = "https://alumnado-gestion.onrender.com"; // URL de la API
 
 
 // Función para obtener todos los elementos (por ejemplo, alumnos)
