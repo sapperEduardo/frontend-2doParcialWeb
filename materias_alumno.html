@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Materias de Alumno</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <div class="container">
+        <a class="navbar-brand h1 text-white" href="#">Gestión de Alumnado</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="alumnos.html">Alumnos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="materias.html">Materias</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <h2 id="tituloAlumno">Materias de Alumno</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Materias Inscritas</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+              </tr>
+            </thead>
+            <tbody id="materiasInscritas">
+              <!-- Aquí se cargarán las materias inscritas -->
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <h3>Materias Disponibles para Inscripción</h3>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+            <tbody id="materiasDisponibles">
+              <!-- Aquí se cargarán las materias disponibles -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/js/materias_alumno.js"></script>
+
+    <style>
+      /* Color pastel más fuerte */
+      .navbar-custom {
+        background-color: #616161; /* Ajusta este color a tu gusto */
+      }
+      /* Asegura que el contenedor ocupe siempre el ancho completo */
+      .navbar .container {
+        max-width: 100%;
+      }
+      .navbar-brand {
+        font-size: 2rem; /* Ajusta el tamaño aquí */
+        font-family: "Roboto Condensed", sans-serif;
+      }
+      .nav-item {
+        font-size: 1.4rem; /* Ajusta el tamaño aquí */
+        font-family: "Roboto Condensed", sans-serif;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+    </style>
+  </body>
+</html>
